@@ -1,0 +1,98 @@
+.swimlane-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+
+.swimlane-lane {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swimlane-lane.dragging {
+  background-color: #d9e3f0;
+}
+
+
+@media (max-width: 768px) {
+  .swimlane-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.lane-card {
+  width: 100%;
+  margin-right: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+}
+
+.lane-block {
+  margin-bottom: 16px;
+}
+
+.filter-bar {
+  padding: 16px;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-input,
+.filter-select,
+.filter-button {
+  border-radius: 4px;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .filter-input,
+  .filter-select,
+  .filter-button {
+    margin-bottom: 8px;
+  }
+}
+
+.block-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.block-card:hover {
+  transform: scale(1.05);
+}
+
+.block-content {
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.block-button {
+  margin-top: 12px;
+}
+
+.high-priority {
+  background-color: #ff4c4c;
+}
+
+.medium-priority {
+  background-color: #ffbc40;
+}
+
+.low-priority {
+  background-color: #2bf052;
+}
+
+.default-priority {
+  background-color: #ffffff;
+}
